@@ -12,11 +12,11 @@ $("document").ready(function(){
     
     $(".uppercase").css("color", "whitesmoke");
     
+    $(".bleh").css("color", "grey");
+    
     $("#jq").css("color", "whitesmoke");
     
     $("body").css("text-align", "center");
-    
-    $("body").css("background-color", "white");
     
     $('p:first').css("color", "grey");
 
@@ -26,48 +26,22 @@ $("document").ready(function(){
     
     $("body").css("background-size", "contain");
     
-    $(".uppercase").bind('click', alertButtonClick);
+    $("#jq").bind('click', alertButtonClick);
     
-    $("#jq").bind('blur', onBlurEvent)
-                  .bind('focus', onFocusEvent)
-                  .bind('onmousedown', onMDownEvent)
-                  .bind('onmouseup', onMUpEvent)
-                  .bind('change', onChangeEvent);
-          
-    $(window).resize(resizedWindow);
-    
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+
 });
 
 function alertButtonClick() {
-    alert("There was a button clicked!");
+    $("#jq").html("You Clicked This");
 }
 
-function onBlurEvent(){
-    $("#second").html("You left the box!");
+function mouseOverMe(){
+    $("h1").html("MouseOn");
+    $("p").html("Secret Tunnel");
 }
 
-function onFocusEvent(){
-    $("#second").html("You entered the box!");
-}
-
-function onMDownEvent(){
-    $("#second").html("You left the textbox!");
-}
-
-function onMUpEvent(){
-    $("#second").html("You entered the textbox!");
-}
-
-function onChangeEvent(){
-    $("#second").html("You changed the box!");
-}
-
-function onBlurEvent(){
-    $("#second").html("You left the box");
-}
-
-function resizedWindow(){
-    $("#second").html("Window was resized W: " + $(window).width() + " H: " +
-    $(window).height());
-    
+function mouseOutMe(){
+    $("h1").html("JQuery Ex Page");
+    $("p").html("");
 }
