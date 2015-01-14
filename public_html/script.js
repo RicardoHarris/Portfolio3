@@ -1,6 +1,6 @@
 $("document").ready(function(){
     
-    $("#bio").css("color", "black");
+    $("#bio").css("color", "white");
     
     $("div").css("border", "3px solid blue");
     
@@ -12,11 +12,11 @@ $("document").ready(function(){
     
     $(".uppercase").css("border", "3px solid black");
     
-    $(".uppercase").css("color", "black");
+    $(".uppercase").css("color", "whitesmoke");
     
     $(".bleh").css("color", "grey");
     
-    $("#jq").css("color", "black");
+    $("#jq").css("color", "white");
     
     $("body").css("text-align", "center");
     
@@ -24,13 +24,22 @@ $("document").ready(function(){
 
     $("div :nth-child(3)").css("color", "clear");
     
-    $("body").css("background-image", "url(http://th05.deviantart.net/fs70/PRE/f/2011/114/c/2/portal___personality_cores_by_kirbychu-d3es43q.png)");
+    $("body").css("background-image", "url(http://i0.kym-cdn.com/photos/images/original/000/120/151/space_core_wallpaper_2_by_deathonabun-d3eta23.jpg)");
     
     $("body").css("background-size", "cover");
     
     $("#jq").bind('click', alertButtonClick);
     
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    
+    $("h3").css("color", "white");
+    
+    $("h6").css("color", "white");
+    
+    $("#replaceWHtml").css("color", "white");
+    $("#replaceWText").css("color", "white");
+    $("#addAPara").css("color", "white");
+    $("#removeAPara").css("color", "white");
     
     $("#replaceWHtml").bind('click', replaceWHtml);
     $("#replaceWText").bind('click', replaceWText);
@@ -53,7 +62,6 @@ function mouseOverMe(){
 
 function mouseOutMe(){
     $("h1").html("JQuery Ex Page");
-    $("p").html("");
 }
 
 function replaceWHtml(){
