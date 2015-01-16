@@ -1,5 +1,11 @@
 $("document").ready(function(){
     
+    $('#accord').accordion({header: "h4"});
+    
+    $('#accord').css("opacity", "0.5");
+    
+    $("button").css("opacity", "0.7");
+    
     $("#bio").css("color", "white");
     
     $("div").css("border", "3px solid blue");
@@ -14,13 +20,13 @@ $("document").ready(function(){
     
     $(".uppercase").css("color", "whitesmoke");
     
-    $(".bleh").css("color", "grey");
+    $(".bleh").css("color", "whitesmoke");
     
     $("#jq").css("color", "white");
     
     $("body").css("text-align", "center");
     
-    $('p:first').css("color", "grey");
+    $('p:first').css("color", "whitesmoke");
 
     $("div :nth-child(3)").css("color", "clear");
     
@@ -35,6 +41,8 @@ $("document").ready(function(){
     $("h3").css("color", "white");
     
     $("h6").css("color", "white");
+    
+    $("#logo").css("opacity", "0.7");
     
     $("#replaceWHtml").css("color", "white");
     $("#replaceWText").css("color", "white");
@@ -57,7 +65,7 @@ function alertButtonClick() {
 
 function mouseOverMe(){
     $("h1").html("MouseOn");
-    $("p").html("Secret Tunnel");
+    $("div: first").html("Secret Tunnel");
 }
 
 function mouseOutMe(){
